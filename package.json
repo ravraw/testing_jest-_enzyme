@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ravraw/testing_jest-_enzyme/issues"
   },
-  "homepage": "https://github.com/ravraw/testing_jest-_enzyme#readme"
+  "homepage": "https://github.com/ravraw/testing_jest-_enzyme#readme",
+  "dependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0"
+  }
 }
