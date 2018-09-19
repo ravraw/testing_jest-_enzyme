@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -20,14 +21,15 @@ module.exports = {
       }
     ]
   },
+  mode: "development",
   resolve: { extensions: ["*", ".js", ".jsx"] },
   devtool: "cheap-module-eval-source-map",
   devServer: {
     contentBase: path.join(__dirname, "public/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
-    historyApiFallback: true,
-    hotOnly: true
+    historyApiFallback: true
+    // hotOnly: true
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };
